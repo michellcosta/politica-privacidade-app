@@ -96,7 +96,7 @@
         <ul>
             <li><strong>Localização GPS em tempo real:</strong> Coletamos sua localização precisamente (coordenadas de latitude e longitude) 
             para permitir funcionalidades de geofencing (detecção de entrada/saída de áreas específicas como galpões e estacionamentos).</li>
-            <li><strong>Localização em segundo plano:</strong> <span class="highlight">O aplicativo coleta dados de localização mesmo quando está fechado ou não está em uso</span>. Isso é estritamente necessário para o monitoramento contínuo de geofences e atualização automática de status, <strong>permitindo que o motorista mantenha o foco na condução e as mãos no volante enquanto o sistema detecta sua chegada à base automaticamente.</strong></li>
+            <li><strong>Localização em segundo plano:</strong> <span class="highlight">O aplicativo coleta dados de localização mesmo quando está fechado ou não está em uso</span>. Isso é estritamente necessário para o monitoramento contínuo de geofences e atualização automática de status, <strong>permitindo que o motorista mantenha o foco na condução e as mãos no volante enquanto o sistema detecta sua chegada à base automaticamente.</strong> O uso da localização em segundo plano é limitado ao período da jornada de trabalho: <strong>quando o motorista marca seu status como concluído, o aplicativo interrompe automaticamente o acesso à localização em segundo plano</strong>, sem necessidade de ação do usuário.</li>
         </ul>
         
         <h3>2.3. Dados de Uso do Aplicativo</h3>
@@ -154,7 +154,7 @@
         
         <h2>7. Permissões do Aplicativo</h2>
         <ul>
-            <li><strong>Localização (Foreground e Background):</strong> Vital para a detecção automática de chegada.</li>
+            <li><strong>Localização (Foreground e Background):</strong> Vital para a detecção automática de chegada. O uso em segundo plano cessa automaticamente quando o status do motorista é marcado como concluído.</li>
             <li><strong>Notificações:</strong> Para chamados de vaga imediatos.</li>
             <li><strong>Câmera:</strong> Para scanner de QR Code e CNH.</li>
             <li><strong>Microfone:</strong> Para o Assistente de Voz operacional.</li>
